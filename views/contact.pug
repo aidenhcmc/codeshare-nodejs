@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1.text-center Contact US
+
+  form.col-md-6.col-md-offset-3(method="post")
+    .form-group
+      label Name
+      input.form-control(type="text" aria-describedby="emailHelp" placeholder="Enter name")
+    .form-group
+      label Email
+      input.form-control(type="email" placeholder="Enter email")
+    .form-group
+      label Messages
+      textarea.form-control(rows=3 placeholder="Your messages")
+    
+    button.btn.btn-primary(type="submit") Submit
